@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'gisfsApp'`, () => {
+  it(`should have as title 'gifsApp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('gisfsApp');
+    expect(app.title).toEqual('gifsApp');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('gisfsApp app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('gifsApp app is running!');
   });
 });
